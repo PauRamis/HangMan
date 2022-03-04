@@ -12,8 +12,13 @@ private Gallows gallows;
     }
 
     void playGame(Word w) {
+        Alphabet alphabet = new Alphabet();
+        //Mentre no hagi acabat, mostram el
         while (!gallows.isHung() && !w.isGuessed()){
+            //Mostrem estat del joc
             this.gallows.display();
+            this.wordDisplay.display(w);
+            this.alphabetDisplay.display(alphabet);
         }
     }
 
