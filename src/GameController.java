@@ -12,8 +12,8 @@ private Gallows gallows;
     }
 
     void playGame(Word w) {
-        while (!gallows.isHung() && w.isGuessed()){
-
+        while (!gallows.isHung() && !w.isGuessed()){
+            this.gallows.display();
         }
     }
 
