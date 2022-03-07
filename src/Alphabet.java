@@ -15,5 +15,6 @@ interface AlphabetDisplay {
 
 class TextAlphabetDisplay implements AlphabetDisplay {
     public void display(Alphabet a) {
+        System.out.println("Dins textAplphabetDisplay");
     }
 }

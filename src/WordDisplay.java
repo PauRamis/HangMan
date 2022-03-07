@@ -4,6 +4,7 @@ public interface WordDisplay {
 
 class TextWordDisplay implements WordDisplay {
     public void display(Word w) {
+        System.out.println(w.toString());
 
     }
 }
