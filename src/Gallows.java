@@ -68,8 +68,8 @@ class TextGallows extends Gallows {
             " |     0          \n" +
             " |    /|\\        \n" +
             " |     |          \n" +
-            " |     /\\        \n" +
-            " |    /  \\       \n" +
+            " |    / \\        \n" +
+            " |   /   \\       \n" +
             " |                ",
     };
     void display() {
