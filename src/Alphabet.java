@@ -1,11 +1,19 @@
 public class Alphabet {
-    public boolean isUsed(char c) {
-        return false;
+    public String getUsedChars() {
+        return usedChars;
     }
 
-    public boolean doGuess(char c) {
-        return false;
+    private String usedChars = "";
+
+    public boolean isUsed(char c) {
+        return this.usedChars.contains("" + c);
     }
+
+    public void doGuess(char c) {
+        usedChars += c;
+    }
+
+
 }
 
 
@@ -15,6 +23,7 @@ interface AlphabetDisplay {
 
 class TextAlphabetDisplay implements AlphabetDisplay {
     public void display(Alphabet a) {
-        System.out.println("Dins textAplphabetDisplay");
+        String usedChars = a.getUsedChars();
+        System.out.println("Used chars: " + usedChars);
     }
 }

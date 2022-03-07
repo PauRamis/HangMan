@@ -23,7 +23,11 @@ public class Word {
     }
 
     boolean isGuessed() {
-        return false;
+        for (char c: this.theString.toCharArray()){
+            if (!this.goodChars.contains("" + c))
+                return false;
+        }
+        return true;
     }
 
     boolean doGuess(char c) {

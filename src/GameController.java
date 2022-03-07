@@ -33,7 +33,17 @@ public class GameController {
                 this.gallows.addPart();
             }
         }
+        showState(word);
     }
+
+    private void showState(Word word) {
+        if (word.isGuessed()) {
+            System.out.println("Has guanyat!");
+            System.out.println(word);
+        }
+    }
+
+
 
     //Torna el caracter que introduesqui l'usuari (a - z)
     private char getInput() {

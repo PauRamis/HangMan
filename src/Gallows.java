@@ -16,6 +16,63 @@ public abstract class Gallows {
 
 
 class TextGallows extends Gallows {
+    private String[] graphics = new String[]{
+            //Dibuixar els 6 pals
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                ",
+
+            " |-----|         \n" +
+            " |     |          \n" +
+            " |     0          \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                ",
+
+            " |-----|         \n" +
+            " |     |          \n" +
+            " |     0          \n" +
+            " |    /|\\        \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                ",
+
+            " |-----|          \n" +
+            " |     |          \n" +
+            " |     0          \n" +
+            " |    /|\\        \n" +
+            " |     |          \n" +
+            " |                \n" +
+            " |                \n" +
+            " |                ",
+
+            " |-----|          \n" +
+            " |     |          \n" +
+            " |     0          \n" +
+            " |    /|\\        \n" +
+            " |     |          \n" +
+            " |     /\\        \n" +
+            " |                \n" +
+            " |                ",
+
+            " |-----|          \n" +
+            " |     |          \n" +
+            " |     0          \n" +
+            " |    /|\\        \n" +
+            " |     |          \n" +
+            " |     /\\        \n" +
+            " |    /  \\       \n" +
+            " |                ",
+    };
     void display() {
+        System.out.println(graphics[6 - pointsLeft]);
     }
 }
